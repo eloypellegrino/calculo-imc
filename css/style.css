@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+html, body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  width: 900px;
+  height: 500px;
+  background-color: #080808;
+  border-radius: 10px;
+  padding: 20px 60px;
+}
+
+.app-calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.app-calc .app-title {
+  font-size: 50px;
+  margin: 0 0 20px 0;
+}
+.app-calc label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.app-calc input {
+  width: 150px;
+  height: 30px;
+  background-color: #1B1B1B;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  -moz-appearance: textfield;
+}
+.app-calc input:focus {
+  outline: none;
+}
+.app-calc input:first-of-type {
+  margin-bottom: 20px;
+}
+.app-calc input::-webkit-outer-spin-button,
+.app-calc input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.app-calc fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.app-calc .weight, .app-calc .height {
+  color: #737373;
+  position: absolute;
+  left: 150px;
+  top: 13px;
+  font-weight: 400;
+}
+.app-calc .height {
+  left: 143px;
+}
+.app-calc .imc-calc-button {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  background-image: linear-gradient(315deg, #7B00FF, #5E00C2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+}
+.app-calc .imc-calc-button:hover {
+  background-image: linear-gradient(135deg, #7B00FF, #5E00C2);
+}
+.app-calc .imc-status {
+  font-weight: 600;
+  color: #7B00FF;
+}
+
+.line-divider {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: linear-gradient(135deg, #7B00FF, #5E00C2);
+  width: 2px;
+  height: 400px;
+  margin: auto 0;
+}
+
+.app-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.app-table table {
+  text-align: left;
+}
+.app-table table th {
+  padding: 20px 10px;
+}
+.app-table table td {
+  padding: 3px 10px;
+  font-size: 18px;
+  position: relative;
+}
+
+.stageSelected::before {
+  content: ">";
+  color: #7B00FF;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  left: -10px;
+  top: 2px;
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

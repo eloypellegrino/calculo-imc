@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Cálculo IMC</title>
+</head>
+
+<body>
+    <div class="background-full">
+        <section class="app-container">
+            <section class="app-calc">
+                <h1 class="app-title">Cálculo IMC</h1>
+
+                <label for="weight">Insira seu peso</label>
+                <fieldset>
+                    <input type="number" name="weight" id="weight">
+                    <span class="weight">kg</span>
+                </fieldset>
+
+                <label for="height">Insira sua altura</label>
+                <fieldset>
+                    <input type="number" name="height" id="height">
+                    <span class="height">cm</span>
+                </fieldset>
+
+                <p class="imc-result">Insira os dados acima para calcular.</p>
+
+                <button class="imc-calc-button">Calcular meu IMC</button>
+            </section>
+
+            <span class="line-divider"></span>
+
+            <section class="app-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="firstStage">Até 18.5</td>
+                            <td>Abaixo do peso</td>
+                        </tr>
+                        <tr>
+                            <td class="secondStage">Entre 18.5 e 24.9</td>
+                            <td>Peso normal</td>
+                        </tr>
+                        <tr>
+                            <td class="thirdStage">Entre 25 e 29.9</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td class="fourthStage">Entre 30 e 34.9</td>
+                            <td>Obesidade grau 1</td>
+                        </tr>
+                        <tr>
+                            <td class="fifthStage">Entre 35 e 39.9</td>
+                            <td>Obesidade grau 2</td>
+                        </tr>
+                        <tr>
+                            <td class="sixthStage">Mais que 40</td>
+                            <td>Obesidade grau 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
